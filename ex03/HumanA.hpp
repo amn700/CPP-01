@@ -5,9 +5,10 @@
 
 class HumanA
 {
-public:
+private:
     std::string name;
     Weapon &w;
+public:
     void attack( void );
     HumanA( std::string str, Weapon &weapon );
     ~HumanA( void );

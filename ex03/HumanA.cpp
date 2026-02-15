@@ -15,5 +15,6 @@ void HumanA :: attack ( void )
 
 HumanA :: ~HumanA( void )
 {
+    std::cout << name << ": dies.\n" ;
     return;
 }

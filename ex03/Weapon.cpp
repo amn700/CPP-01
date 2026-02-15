@@ -8,7 +8,6 @@ std::string Weapon:: getType( void ) const
 void Weapon :: setType(std::string weapon)
 {
     type = weapon;
-    return ;
 }
 
 Weapon :: Weapon( void )
@@ -17,6 +16,7 @@ Weapon :: Weapon( void )
 }
 Weapon :: ~Weapon( void )
 {
+    std::cout << type << ": got trashed.\n" ;
     return ;
 }
 

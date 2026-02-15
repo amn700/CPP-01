@@ -2,10 +2,8 @@
 
 int main ()
 {
-    // Zombie z ("z_one");
-
-    Zombie *horde = Zombie :: zombieHorde(10, "horde");
-    for (int i = 0; i < 10; i++)
+    Zombie *horde = zombieHorde(5, "horde");
+    for (int i = 0; i < 5; i++)
         horde[i].announce();
     delete[] horde;
 }

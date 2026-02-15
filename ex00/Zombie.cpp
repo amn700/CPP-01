@@ -7,8 +7,7 @@ Zombie::Zombie(std::string new_name)
 
 Zombie::~Zombie(void)
 {
-    delete();
-    std::cout <<get_name()<< ": ";
+    std::cout << get_name() << ": ";
     std::cout <<"aghh"<< std::endl;
     return;
 }
@@ -24,16 +23,12 @@ void Zombie :: announce( void )
     std::cout << "BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-Zombie* Zombie :: newZombie( std::string name )
+Zombie* newZombie( std::string name )
 {
-    Zombie *z = (Zombie *) malloc(sizeof(Zombie));
-    if (!z)
-        return NULL;
-    z->name = name;
-    return z;
+    return new Zombie(name);
 }
 
-void Zombie:: randomChump( std::string name )
+void randomChump( std::string name )
 {
     Zombie rando = Zombie(name);
     rando.announce();

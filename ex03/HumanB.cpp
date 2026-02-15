@@ -19,6 +19,7 @@ void HumanB :: attack ( void )
 
 HumanB :: ~HumanB( void )
 {
+    std::cout << name << ": dies.\n";
     return;
 }
 

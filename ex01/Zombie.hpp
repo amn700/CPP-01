@@ -7,10 +7,9 @@
 class Zombie
 {
 public:
-	// static Zombie		*newZombie( std::string name );
-	static Zombie		*zombieHorde( int N, std :: string name);
 	void		announce( void );
 	std::string	get_name(void) const;
+	void		set_name(std::string);
 	
 	Zombie(std::string new_name);
 	Zombie(void);
@@ -18,5 +17,7 @@ public:
 private:
 	std::string name;
 };
+
+Zombie		*zombieHorde( int N, std :: string name);
 
 #endif
